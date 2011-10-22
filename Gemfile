@@ -33,6 +33,8 @@ gem 'jquery-rails'
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false
+  gem 'guard'
+  gem 'guard-rspec'
 end
 gem "bson_ext"
 gem "mongoid", ">= 2.0.0.beta.19"
