@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Location:</b>
+  <%= @truck.location %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%= @truck.latitude %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%= @truck.longitude %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @truck.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @truck.description %>
+</p>
+
+<p>
+  <b>Food type:</b>
+  <%= @truck.food_type %>
+</p>
+
+
+<%= link_to 'Edit', edit_truck_path(@truck) %> |
+<%= link_to 'Back', trucks_path %>
