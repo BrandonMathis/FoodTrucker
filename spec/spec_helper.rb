@@ -30,4 +30,8 @@ RSpec.configure do |config|
   # automatically. This will be the default behavior in future versions of
   # rspec-rails.
   config.infer_base_class_for_anonymous_controllers = false
+
+  config.before(:each) do
+    Mongoid.master.collections.reject { |c| c.name =~ /system.indexes/ }.each(&:drop)
+  end
 end

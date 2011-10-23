@@ -35,6 +35,7 @@ group :test do
   gem 'turn', :require => false
   gem 'guard'
   gem 'guard-rspec'
+  gem 'log_buddy'
 end
 gem "bson_ext"
 gem "mongoid", ">= 2.0.0.beta.19"
