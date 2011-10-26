@@ -1,4 +1,5 @@
 require 'spec_helper'
+
 describe TrucksController do
   def valid_attributes
     {}
@@ -8,7 +9,7 @@ describe TrucksController do
     it "assigns all trucks as @trucks" do
       truck = Truck.create! valid_attributes
       get :index
-      assigns(:trucks).to_a.should eq([truck])
+      assigns(:trucks).should eq([truck])
     end
   end
 
@@ -130,4 +131,5 @@ describe TrucksController do
       response.should redirect_to(trucks_url)
     end
   end
+
 end

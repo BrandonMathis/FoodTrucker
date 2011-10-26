@@ -2,9 +2,8 @@
 
 <table>
   <tr>
-    <th>Location</th>
-    <th>Latitude</th>
-    <th>Longitude</th>
+    <th>Coordinates</th>
+    <th>Address</th>
     <th>Name</th>
     <th>Description</th>
     <th>Food type</th>
@@ -15,9 +14,8 @@
 
 <% @trucks.each do |truck| %>
   <tr>
-    <td><%= truck.location %></td>
-    <td><%= truck.latitude %></td>
-    <td><%= truck.longitude %></td>
+    <td><%= truck.to_coordinates %></td>
+    <td><%= truck.address %></td>
     <td><%= truck.name %></td>
     <td><%= truck.description %></td>
     <td><%= truck.food_type %></td>

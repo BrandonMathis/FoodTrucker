@@ -41,7 +41,6 @@ class TrucksController < ApplicationController
   # POST /trucks.json
   def create
     @truck = Truck.new(params[:truck])
-
     respond_to do |format|
       if @truck.save
         format.html { redirect_to @truck, notice: 'Truck was successfully created.' }
